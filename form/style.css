@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/bg.jpg);
+    background-size:cover;
+}
+.box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+  
+}
+ h1{
+    color:blueviolet;
+    margin: 0 0px 30px 100px;
+     font-family: sans-serif;
+     
+     
+}
+.box .box1{
+    position: relative;
+}
+.box .box1 input{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid blue;
+    background: transparent;
+     outline: none;   
+}
+.box .box1 label{
+    position: absolute;
+    bottom: 70%;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.box .box1 input:focus ~ label,.box .box1 input:valid ~ label{
+    top: -10%;
+    left: 0;
+    color:blue;
+    font-size: 12px;
+    
+}
+.box input[type=submit]{
+    border: none;
+    background: blue;
+    outline: none;
+    color: white;
+   
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.box input[type=submit]:hover{
+    background: orange;
+    transition: .5s;
+}
